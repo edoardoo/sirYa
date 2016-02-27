@@ -1,0 +1,37 @@
+        <b>Matched</b>
+        <div class="row">
+            <div class="col s6">
+                <div class="collection"  ng-repeat="search in searches.searches.matched">
+                    <a href="" ng-click="searches.select($index)" class="collection-item"><span ng-bind="search.search.name"></span>&nbsp;<span ng-bind="search.search.surname"></span><span class="badge" ng-bind="search.matches.length"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <b>Pending</b>
+        <div class="row">
+            <div class="col s6">
+                <div class="collection" ng-repeat="search in searches.searches.pending">
+                    <div class="collection-item"><span ng-bind="search.name"></span>&nbsp;<span ng-bind="search.surname"></span></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col s6">
+                <span ng-show="searches.matchedSelected">
+                    <span ng-bind="searches.matchedSelected.search.name"></span>
+                    &nbsp
+                    <span ng-bind="searches.matchedSelected.search.surname"></span>
+                </span>                
+                <ul class="collapsible collapsible-accordion" data-collapsible="accordion" >
+                    <li ng-repeat="match in searches.matchedSelected.matches">
+                        <div class="collapsible-header">
+                            <span ng-bind="match.name"></span>
+                            <span ng-bind="match.surname"></span>
+                        </div>
+                        <div class="collapsible-body"><b>Info body</b></div>
+                    </li>
+                </ul>
+            </div>
+        </div>

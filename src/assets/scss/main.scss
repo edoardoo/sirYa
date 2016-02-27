@@ -1,0 +1,88 @@
+@import "../../../bower_components/material-design-iconic-font/scss/material-design-iconic-font.scss";
+// @import "../../../bower_components/materialize/sass/materialize.scss";
+
+html, body{
+    height: 100%;
+    * {
+        box-sizing: border-box;
+    }
+}
+
+body{
+	@import "home/home.scss";
+}
+
+
+
+.sectionTitle{
+	font-weight: 200;
+	color: #666;
+}
+.readOnly{
+    color: #34495e;
+}
+
+.tag-panel{
+    padding: 10px !important;
+}
+
+.name{
+    float: left;
+}
+
+.imageContainer{
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    float: left;
+    padding-top: 100%;
+}
+.map{
+	height: 400px;
+	width: 100%;
+
+}
+
+.places{
+	.row{
+		margin-bottom: 0;
+	}
+	.collection-item{
+		padding: 0;
+	}
+	.input-field{
+		margin-top: 0;
+	}
+}
+.colorWhite{
+	color: white !important;
+}
+
+.imgCollaps{
+	height: 10%;
+	width: 10%;
+}
+
+.collapsHeader{
+	padding: 10px;
+}
+
+.subTitle{
+	color: #999;
+}
+
+.menoActive.active {
+    background-color: #EEE !important;
+	color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.details{
+	padding: 15px !important;
+}
+
+.deleteIcon{
+	margin-right: 30px !important;
+}
